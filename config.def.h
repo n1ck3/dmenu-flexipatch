@@ -33,12 +33,16 @@ static int restrict_return = 0;             /* -1 option; if 1, disables shift-r
 static char *font = "monospace 10";
 #else
 #if XRESOURCES_PATCH
-static char *fonts[] =
+static char *fonts[] = 
 #else
 static const char *fonts[] =
 #endif // XRESOURCES_PATCH
 {
-	"monospace:size=10"
+	// "monospace:size=10",
+	"Apple Color Emoji:size=15",
+	// "Noto Color Emoji:pixelsize=15",
+	"Hack Nerd Font Mono:pixelsize=15",
+	// "Deja Vu Sans:pixelsize=15",
 };
 #endif // PANGO_PATCH
 #if MANAGED_PATCH
